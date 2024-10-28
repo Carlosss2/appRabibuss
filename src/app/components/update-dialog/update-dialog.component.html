@@ -1,0 +1,11 @@
+<h2 mat-dialog-title>Actualizar Ruta</h2>
+<mat-dialog-content>
+  <p>Datos</p>
+  <input type="number" placeholder="id"[(ngModel)]="id" >
+  <input type="text" placeholder="Origen" [(ngModel)]="origen">
+  <input type="text" placeholder="Destino" [(ngModel)]="destino">
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button (click)="cancel()">Cancelar</button>
+  <button mat-button (click)="actualizarRuta()" cdkFocusInitial>Actualizar</button>
+</mat-dialog-actions>

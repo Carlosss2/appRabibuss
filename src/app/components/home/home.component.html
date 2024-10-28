@@ -1,0 +1,42 @@
+<app-header></app-header>
+
+<main>
+    <section class="search-section">
+        <h2>¿A DÓNDE VAMOS?</h2>
+        <div class="search-fields">
+            <input type="text" placeholder="Origen" [(ngModel)]="origen"> 
+            <input type="text" placeholder="Destino" [(ngModel)]="destino" (change)="onDestino($event)">
+            <input type="text" placeholder="Asientos Disponibles" [(ngModel)]="asientosDisponibles">
+            <input type="date" placeholder="Fecha" [(ngModel)]="fecha" (change)="onDateChange($event)"> <!-- Evento change para manejar la fecha -->
+            <button class="search-button" (click)="agregarViaje()">Agregar</button>
+        </div>
+    </section>
+
+    <section class="selected-date">
+        <h2>Fecha seleccionada:</h2>
+        <p>{{ selectedDate | date:'longDate' }}</p>
+
+        <h2>Destino seleccionado:</h2>
+        <p>{{ selectedDestino | miPipe }}</p> 
+    </section>
+
+    <section class="destinations">
+        <h2>DESTINOS MÁS VISITADOS</h2>
+        <div class="destination-cards">
+            <div class="card">
+                <img src="https://media.staticontent.com/media/pictures/2ee7f9f0-3498-48dc-824a-074a455d6b99" alt="Acapulco">
+                <p>ACAPULCO</p>
+            </div>
+            <div class="card">
+                <img src="https://images.myguide-cdn.com/md/content/2/large/n-a-765978.jpg" alt="CDMX">
+                <p>CDMX</p>
+            </div>
+            <div class="card">
+                <img src="https://xenpal.com.mx/wp-content/uploads/2024/06/atracciones-monterrey-nuevo-leon.jpg" alt="Monterrey">
+                <p>MONTERREY</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<app-footer></app-footer>

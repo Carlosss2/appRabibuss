@@ -1,0 +1,42 @@
+/* Estilo para el input */
+input[type="number"] {
+    width: 100%; /* O cualquier ancho que prefieras */
+    padding: 12px; /* Espaciado interno */
+    margin: 10px 0; /* Espaciado externo */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+    transition: border-color 0.3s; /* Transición suave para el cambio de borde */
+  }
+  
+  input[type="number"]:focus {
+    border-color: #007bff; /* Color del borde cuando está enfocado */
+    outline: none; /* Quitar el borde de enfoque predeterminado */
+  }
+  
+  /* Estilo para el botón */
+  button {
+    background-color: #5C1D1D; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 12px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambiar cursor al pasar por encima */
+    transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves */
+  }
+  
+  button:hover {
+    background-color: #8A2626; /* Color de fondo al pasar el mouse */
+    transform: translateY(-2px); /* Sutil efecto de elevar el botón */
+  }
+  
+  button:active {
+    transform: translateY(0); /* Efecto al hacer clic */
+  }
+
+  .button-container {
+    display: flex; /* Usar flexbox */
+    justify-content: center; /* Centrar horizontalmente */
+    margin-top: 10px; /* Espaciado superior */
+}

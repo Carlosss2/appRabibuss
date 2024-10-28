@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F4F4F4;
+}
+
+.search-section {
+    background-image: url('https://www.rentadeautobusesycamionetas.com/wp-content/uploads/2021/07/todo-lo-que-debes-saber-si-vas-a-viajar-en-autobus.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 650px; /* Aumenta la altura para que la imagen sea más grande */
+    padding: 80px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.search-section h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.search-fields {
+    display: flex;
+    gap: 20px;
+    max-width: 800px;
+    width: 100%;
+    justify-content: center;
+}
+
+.search-fields input[type="text"] {
+    padding: 15px 20px;
+    font-size: 16px;
+    width: 200px;
+    border: 2px solid #C82636;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease;
+    font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.search-fields input[type="text"]:focus {
+    border-color: #4D2A2A;
+    box-shadow: 0 0 8px rgba(77, 42, 42, 0.3);
+}
+
+.search-fields .search-button {
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #C82636;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.search-fields .search-button:hover {
+    background-color: #4D2A2A;
+    transform: scale(1.05);
+}
+
+.destinations {
+    padding: 40px;
+    text-align: center;
+}
+
+.destinations h2 {
+    font-size: 24px;
+    color: #888; /* Cambia el color a gris */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.destination-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #E0E0E0; /* Cambia el fondo a gris claro */
+    width: 280px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    font-family: 'Inter', sans-serif;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 180px; /* Aumenta la altura para hacer la imagen más grande */
+    border-radius: 8px;
+    object-fit: cover; /* Asegura que la imagen cubra todo el espacio */
+}
+
+.card p {
+    font-size: 18px;
+    color: #4D2A2A;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Nuevos estilos para la sección de fecha seleccionada */
+.selected-date {
+    padding: 40px; /* Espacio alrededor de la sección */
+    text-align: center; /* Alineación centrada */
+}
+
+.selected-date h2 {
+    font-size: 24px;
+    color: #888; /* Color gris */
+    margin-bottom: 20px;
+    font-weight: bold; /* Negrita */
+}
+
+.selected-date p {
+    font-size: 18px; /* Tamaño de fuente */
+    color: #4D2A2A; /* Color rojo oscuro */
+    font-weight: bold; /* Negrita */
+}
